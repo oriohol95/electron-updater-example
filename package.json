@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example-oriol",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -20,7 +20,6 @@
     "mac": {
       "category": "your.app.category.type",
       "target": [
-        "zip",
         "dmg"
       ]
     }
