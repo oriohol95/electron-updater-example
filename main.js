@@ -94,6 +94,9 @@ app.on('ready', function() {
   Menu.setApplicationMenu(menu);
 
   createDefaultWindow();
+
+  console.log('created drama');
+  autoUpdater.checkForUpdatesAndNotify();
 });
 app.on('window-all-closed', () => {
   app.quit();
@@ -110,6 +113,7 @@ app.on('window-all-closed', () => {
 // app quits.
 //-------------------------------------------------------------------
 app.on('ready', function()  {
+  console.log('ready tete');
   autoUpdater.checkForUpdatesAndNotify();
 });
 
