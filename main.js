@@ -95,7 +95,7 @@ app.on('ready', function() {
 
   createDefaultWindow();
 
-  console.log('created drama');
+  log.info('Hello, aixo fa algo?');
   autoUpdater.checkForUpdatesAndNotify();
 });
 app.on('window-all-closed', () => {
@@ -113,7 +113,7 @@ app.on('window-all-closed', () => {
 // app quits.
 //-------------------------------------------------------------------
 app.on('ready', function()  {
-  console.log('ready tete');
+  log.info('Hello, problemes si no fa res');
   autoUpdater.checkForUpdatesAndNotify();
 });
 
