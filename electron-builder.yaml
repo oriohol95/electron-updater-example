@@ -1,7 +1,7 @@
 appId: com.koobinevent.koobin-devices
 
 mac:
-  target: dmg
+  target: [ "dmg", "zip" ]
   publish:
     provider: "github"
     releaseType: "release"
