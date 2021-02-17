@@ -60,7 +60,9 @@ function sendStatusToWindow(text) {
 }
 function createDefaultWindow() {
   win = new BrowserWindow();
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
+
+  autoUpdater.checkForUpdatesAndNotify();
   win.on('closed', () => {
     win = null;
   });
@@ -92,6 +94,9 @@ app.on('ready', function() {
   // Create the Menu
   const menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);
+
+  log.info('create window');
+  console.log('create window');
 
   createDefaultWindow();
 
