@@ -3,4 +3,6 @@ appId: com.koobinevent.koobin-devices
 mac:
   target: dmg
   publish:
-    - github
+    provider: "github"
+    releaseType: "release"
+  

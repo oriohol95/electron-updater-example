@@ -59,7 +59,15 @@ function sendStatusToWindow(text) {
   win.webContents.send('message', text);
 }
 function createDefaultWindow() {
-  win = new BrowserWindow();
+  win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      devTools: true,
+      nodeIntegration: true,
+      enableRemoteModule: true
+    }
+  });
   // win.webContents.openDevTools();
 
   autoUpdater.checkForUpdatesAndNotify();
