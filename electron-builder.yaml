@@ -1,0 +1,7 @@
+appId: com.koobinevent.koobin-devices
+
+mac:
+  target: dmg
+  publish:
+    - github
+    - bintray
