@@ -68,9 +68,8 @@ function createDefaultWindow() {
       enableRemoteModule: true
     }
   });
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
 
-  autoUpdater.checkForUpdatesAndNotify();
   win.on('closed', () => {
     win = null;
   });
@@ -107,9 +106,6 @@ app.on('ready', function() {
   console.log('create window');
 
   createDefaultWindow();
-
-  log.info('Hello, aixo fa algo?');
-  autoUpdater.checkForUpdatesAndNotify();
 });
 app.on('window-all-closed', () => {
   app.quit();
@@ -126,7 +122,6 @@ app.on('window-all-closed', () => {
 // app quits.
 //-------------------------------------------------------------------
 app.on('ready', function()  {
-  log.info('Hello, problemes si no fa res');
   autoUpdater.checkForUpdatesAndNotify();
 });
 
