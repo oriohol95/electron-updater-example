@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example-oriol",
-  "version": "0.7.35",
+  "version": "0.7.36",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Oriol Colomer",
