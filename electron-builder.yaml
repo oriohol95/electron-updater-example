@@ -6,3 +6,14 @@ mac:
     provider: "github"
     releaseType: "release"
   
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: true
+
+win:
+  target: [ "nsis", "zip" ]
+  publish:
+    provider: "github"
+    releaseType: "release"
+  
