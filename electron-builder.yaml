@@ -12,7 +12,7 @@ nsis:
   perMachine: true
 
 win:
-  target: [ "nsis", "zip" ]
+  target: nsis
   publish:
     provider: "s3"
     bucket: "koobin-devices"
