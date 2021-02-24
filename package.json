@@ -1,11 +1,11 @@
 {
   "name": "electron-updater-example-oriol",
-  "version": "0.7.44",
+  "version": "0.7.45",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Oriol Colomer",
   "scripts": {
-    "publish": "electron-builder -p always"
+    "example": "electron-builder -p always"
   },
   "devDependencies": {
     "electron": "10.1.5",
